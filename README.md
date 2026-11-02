@@ -33,7 +33,7 @@ Computer Engineering student at Rajamangala University of Technology Isan, based
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+<!--![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)-->
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=111)
@@ -42,8 +42,8 @@ Computer Engineering student at Rajamangala University of Technology Isan, based
 
 </div>
 
-<div align="center">
+<!-- <div align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=MIBVI&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true" alt="MIBVI GitHub statistics" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MIBVI&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true" alt="Most used languages" />
-</div>
+</div> -->
 
