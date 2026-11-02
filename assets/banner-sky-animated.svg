@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" width="100%" height="100%">
+  <defs>
+    <!-- Sky & Atmosphere Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071527"/>
+      <stop offset="35%" stop-color="#0c2544"/>
+      <stop offset="65%" stop-color="#1e40af"/>
+      <stop offset="85%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- Glowing Morning Star / Celestial Orb -->
+    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#bae6fd" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cloud Gradients -->
+    <linearGradient id="cloudSoft1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#bae6fd" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="cloudSoft2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#e0f2fe" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="cloudForeground" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#e0f2fe" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#bae6fd" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <!-- Wind / Breeze Streamlines -->
+    <linearGradient id="windStream" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#bae6fd" stop-opacity="0.65"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="cloudBlur">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: #ffffff;
+      letter-spacing: 2px;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e0f2fe;
+      letter-spacing: 1.5px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 15.5px;
+      fill: #bae6fd;
+      letter-spacing: 0.5px;
+    }
+
+    /* Floating Clouds Animation */
+    @keyframes cloudDrift1 {
+      0% { transform: translateX(0px); }
+      50% { transform: translateX(35px); }
+      100% { transform: translateX(0px); }
+    }
+    @keyframes cloudDrift2 {
+      0% { transform: translateX(0px); }
+      50% { transform: translateX(-30px); }
+      100% { transform: translateX(0px); }
+    }
+    @keyframes cloudDrift3 {
+      0% { transform: translateX(0px); }
+      50% { transform: translateX(20px); }
+      100% { transform: translateX(0px); }
+    }
+    .drift-1 { animation: cloudDrift1 20s ease-in-out infinite; }
+    .drift-2 { animation: cloudDrift2 26s ease-in-out infinite; }
+    .drift-3 { animation: cloudDrift3 16s ease-in-out infinite; }
+
+    /* Breeze flow animation */
+    @keyframes windPass {
+      0% { transform: translateX(-150px); opacity: 0; }
+      20% { opacity: 0.7; }
+      80% { opacity: 0.7; }
+      100% { transform: translateX(200px); opacity: 0; }
+    }
+    .wind-line-1 { animation: windPass 9s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .wind-line-2 { animation: windPass 12s cubic-bezier(0.4, 0, 0.2, 1) infinite 4s; }
+
+    /* Sky Orb Breathing Glow */
+    @keyframes orbBreath {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    .orb-pulse {
+      transform-origin: 820px 80px;
+      animation: orbBreath 7s ease-in-out infinite;
+    }
+
+    /* Twinkle stars / atmospheric particles */
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.9; }
+    }
+    .star-1 { animation: twinkle 3s ease-in-out infinite; }
+    .star-2 { animation: twinkle 4.5s ease-in-out infinite 1s; }
+    .star-3 { animation: twinkle 3.5s ease-in-out infinite 2s; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="960" height="260" rx="20" fill="url(#skyGrad)"/>
+
+  <!-- Atmospheric Glow & Celestial Body -->
+  <g class="orb-pulse">
+    <circle cx="820" cy="80" r="100" fill="url(#orbGlow)"/>
+    <circle cx="820" cy="80" r="32" fill="#ffffff" opacity="0.9" filter="url(#glow)"/>
+  </g>
+
+  <!-- Constellations & Sky Particles -->
+  <g fill="#ffffff">
+    <circle class="star-1" cx="670" cy="45" r="2"/>
+    <circle class="star-2" cx="730" cy="70" r="1.5"/>
+    <circle class="star-3" cx="780" cy="35" r="2.5"/>
+    <circle class="star-1" cx="890" cy="60" r="2"/>
+    <circle class="star-2" cx="630" cy="90" r="1.5"/>
+    <circle class="star-3" cx="540" cy="50" r="2"/>
+    <line x1="670" y1="45" x2="730" y2="70" stroke="#ffffff" stroke-opacity="0.2" stroke-dasharray="3,3"/>
+    <line x1="730" y1="70" x2="780" y2="35" stroke="#ffffff" stroke-opacity="0.2" stroke-dasharray="3,3"/>
+    <line x1="780" y1="35" x2="890" y2="60" stroke="#ffffff" stroke-opacity="0.2" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Distant Background Clouds -->
+  <g class="drift-2" opacity="0.4" filter="url(#cloudBlur)">
+    <path d="M480 180 c25 -30 70 -35 100 -10 c20 -20 60 -25 85 -5 c30 -10 65 5 75 30 c25 0 45 15 50 35 L460 230 z" fill="url(#cloudSoft1)"/>
+    <path d="M120 190 c30 -25 75 -25 100 0 c25 -20 70 -15 90 10 c30 -5 60 15 65 35 L100 235 z" fill="url(#cloudSoft1)"/>
+  </g>
+
+  <!-- Midground Drifting Clouds -->
+  <g class="drift-1">
+    <!-- Cloud Cluster Right -->
+    <path d="M660 210 c15 -25 45 -40 75 -35 c25 -30 75 -35 110 -10 c30 -20 75 -15 95 15 c25 5 45 25 45 50 L640 230 z" fill="url(#cloudSoft2)"/>
+    <!-- Cloud Cluster Left -->
+    <path d="M-20 220 c20 -35 60 -45 95 -25 c30 -30 85 -30 115 5 c25 -15 60 -10 80 15 c20 5 35 20 40 40 L-40 255 z" fill="url(#cloudSoft2)"/>
+  </g>
+
+  <!-- Wind Streamlines / Atmospheric Breeze -->
+  <g>
+    <path class="wind-line-1" d="M380 95 C 480 85, 580 110, 680 95 C 730 88, 770 92, 810 85" fill="none" stroke="url(#windStream)" stroke-width="3" stroke-linecap="round"/>
+    <path class="wind-line-2" d="M240 145 C 360 135, 480 160, 600 145 C 670 137, 740 140, 800 135" fill="none" stroke="url(#windStream)" stroke-width="2.5" stroke-linecap="round"/>
+    <path class="wind-line-1" d="M510 60 C 580 50, 650 68, 720 58" fill="none" stroke="url(#windStream)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Rolling Horizon Cloud Base -->
+  <g class="drift-3">
+    <path d="M-20 260 C 50 220, 140 225, 200 240 C 270 215, 360 215, 430 235 C 510 210, 610 210, 690 235 C 770 210, 860 215, 930 240 C 970 230, 990 240, 1000 260 Z" fill="url(#cloudForeground)"/>
+  </g>
+
+  <!-- Left Content Info -->
+  <g transform="translate(56, 44)">
+    <!-- Status / Vibe Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="296" height="28" rx="14" fill="#0369a1" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6"/>
+      <path d="M12 17 a4 4 0 0 1 0 -8 a6 6 0 0 1 11 -2 a5 5 0 0 1 7 4 a4 4 0 0 1 -1 6 z" fill="#7dd3fc" opacity="0.9" transform="scale(0.8) translate(8, 2)"/>
+      <text x="38" y="18" class="badge-text">RMUTI CPE &#8226; ATMOSPHERE &amp; CODE</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="78" class="title">AKKHARADECH</text>
+    <text x="0" y="116" class="title" fill="#7dd3fc" opacity="0.95" font-size="30">SUPHACHOKTHARASAP</text>
+
+    <!-- Subtitle / Focus Areas -->
+    <g transform="translate(2, 148)">
+      <text x="0" y="0" class="subtitle">
+        <tspan fill="#ffffff" font-weight="600">Computer Engineering</tspan>
+        <tspan fill="#38bdf8"> &#8226; </tspan>
+        <tspan>Computer Vision</tspan>
+        <tspan fill="#38bdf8"> &#8226; </tspan>
+        <tspan>IoT</tspan>
+        <tspan fill="#38bdf8"> &#8226; </tspan>
+        <tspan>Digital Logic</tspan>
+        <tspan fill="#38bdf8"> &#8226; </tspan>
+        <tspan>Cisco</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
