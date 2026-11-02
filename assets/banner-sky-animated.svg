@@ -67,10 +67,10 @@
     }
     .subtitle {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      font-weight: 400;
-      font-size: 15.5px;
-      fill: #bae6fd;
-      letter-spacing: 0.5px;
+      font-weight: 600;
+      font-size: 18px;
+      fill: #e0f2fe;
+      letter-spacing: 2.5px;
     }
 
     /* Floating Clouds Animation */
@@ -153,9 +153,7 @@
 
   <!-- Midground Drifting Clouds -->
   <g class="drift-1">
-    <!-- Cloud Cluster Right -->
     <path d="M660 210 c15 -25 45 -40 75 -35 c25 -30 75 -35 110 -10 c30 -20 75 -15 95 15 c25 5 45 25 45 50 L640 230 z" fill="url(#cloudSoft2)"/>
-    <!-- Cloud Cluster Left -->
     <path d="M-20 220 c20 -35 60 -45 95 -25 c30 -30 85 -30 115 5 c25 -15 60 -10 80 15 c20 5 35 20 40 40 L-40 255 z" fill="url(#cloudSoft2)"/>
   </g>
 
@@ -184,19 +182,9 @@
     <text x="0" y="78" class="title">AKKHARADECH</text>
     <text x="0" y="116" class="title" fill="#7dd3fc" opacity="0.95" font-size="30">SUPHACHOKTHARASAP</text>
 
-    <!-- Subtitle / Focus Areas -->
-    <g transform="translate(2, 148)">
-      <text x="0" y="0" class="subtitle">
-        <tspan fill="#ffffff" font-weight="600">Computer Engineering</tspan>
-        <tspan fill="#38bdf8"> &#8226; </tspan>
-        <tspan>Computer Vision</tspan>
-        <tspan fill="#38bdf8"> &#8226; </tspan>
-        <tspan>IoT</tspan>
-        <tspan fill="#38bdf8"> &#8226; </tspan>
-        <tspan>Digital Logic</tspan>
-        <tspan fill="#38bdf8"> &#8226; </tspan>
-        <tspan>Cisco</tspan>
-      </text>
+    <!-- Subtitle: ONLY COMPUTER ENGINEERING -->
+    <g transform="translate(2, 150)">
+      <text x="0" y="0" class="subtitle">COMPUTER ENGINEERING</text>
     </g>
   </g>
 </svg>
