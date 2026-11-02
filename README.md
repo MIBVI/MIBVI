@@ -28,7 +28,7 @@
 
 **Akkharadech Suphachoktharasap** (`@MIBVI`)  
 Computer Engineering Student at **Rajamangala University of Technology Isan (RMUTI)** 🇹🇭  
-*Focusing on Computer Vision, Embedded IoT (ESP32), and Digital Systems.*
+*Focusing on Web Development, Computer Vision, Embedded IoT (ESP32), and Digital Systems.*
 
 </div>
 
@@ -42,9 +42,9 @@ Computer Engineering Student at **Rajamangala University of Technology Isan (RMU
   <tr>
     <td width="33.3%" align="center" valign="top">
       <br />
-      <strong>Programming Languages</strong><br /><br />
-      <img src="https://skillicons.dev/icons?i=python,c,cpp,js,html,css&theme=dark" alt="Languages" /><br /><br />
-      <sub>Python &bull; C / C++ &bull; JavaScript &bull; HTML/CSS</sub>
+      <strong>Web &amp; Programming Languages</strong><br /><br />
+      <img src="https://skillicons.dev/icons?i=html,css,js,react,python,cpp&theme=dark" alt="Web & Languages" /><br /><br />
+      <sub>JavaScript &bull; React &bull; HTML/CSS &bull; Python &bull; C / C++</sub>
       <br /><br />
     </td>
     <td width="33.3%" align="center" valign="top">
@@ -73,6 +73,17 @@ Computer Engineering Student at **Rajamangala University of Technology Isan (RMU
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
+      <a href="https://github.com/Tonmeiii/Concert-Ticket-Booking">
+        <img src="https://img.shields.io/badge/Web_Development-0284c7?style=for-the-badge&logo=javascript&logoColor=white" alt="Concert Ticket Booking" />
+      </a>
+      <br /><br />
+      <b>Concert Reservation Web Application</b><br />
+      <code>Web App</code> &bull; <code>JavaScript</code> &bull; <code>Supabase / DB</code> &bull; <code>Collab with @Tonmeiii</code>
+      <p>
+        Full-featured web application for online concert booking, interactive seat selection, and order management workflow.
+      </p>
+    </td>
+    <td width="50%" valign="top">
       <a href="https://github.com/MIBVI/computer-vision">
         <img src="https://img.shields.io/badge/Computer_Vision_Labs-0284c7?style=for-the-badge&logo=opencv&logoColor=white" alt="Computer Vision" />
       </a>
@@ -83,6 +94,8 @@ Computer Engineering Student at **Rajamangala University of Technology Isan (RMU
         Digital image processing labs covering Hough transform line/circle detection, edge analysis, and morphological filtering.
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/MIBVI/iot-labs">
         <img src="https://img.shields.io/badge/IoT_Labs-0284c7?style=for-the-badge&logo=espressif&logoColor=white" alt="IoT Labs" />
@@ -92,6 +105,17 @@ Computer Engineering Student at **Rajamangala University of Technology Isan (RMU
       <code>ESP32</code> &bull; <code>MicroPython</code> &bull; <code>Firebase</code>
       <p>
         Embedded microcontroller progression from GPIO and analog sensors to wireless communication and live Firebase cloud sync.
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Painter121/iot-mini-project-soil-moisture">
+        <img src="https://img.shields.io/badge/Smart_Soil_Moisture-1e40af?style=for-the-badge&logo=espressif&logoColor=white" alt="Smart Soil Moisture" />
+      </a>
+      <br /><br />
+      <b>Smart Soil Moisture &amp; Auto-Irrigation</b><br />
+      <code>ESP8266</code> &bull; <code>Blynk</code> &bull; <code>Relay</code> &bull; <code>Collab with @Painter121</code>
+      <p>
+        Automated soil moisture monitoring station with threshold-triggered irrigation relay and real-time alerts.
       </p>
     </td>
   </tr>
@@ -116,30 +140,6 @@ Computer Engineering Student at **Rajamangala University of Technology Isan (RMU
       <code>Cisco Packet Tracer</code> &bull; <code>VLAN</code> &bull; <code>Routing</code> &bull; <code>Subnetting</code>
       <p>
         Enterprise network topology simulations, IP addressing, router/switch configurations, and 802.1Q VLAN trunking.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Painter121/iot-mini-project-soil-moisture">
-        <img src="https://img.shields.io/badge/Smart_Soil_Moisture-1e40af?style=for-the-badge&logo=espressif&logoColor=white" alt="Smart Soil Moisture" />
-      </a>
-      <br /><br />
-      <b>Smart Soil Moisture &amp; Auto-Irrigation</b><br />
-      <code>ESP8266</code> &bull; <code>Blynk</code> &bull; <code>Relay</code> &bull; <code>Collab with @Painter121</code>
-      <p>
-        Automated soil moisture monitoring station with threshold-triggered irrigation relay and real-time alerts.
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Tonmeiii/Concert-Ticket-Booking">
-        <img src="https://img.shields.io/badge/Concert_Ticket_Booking-1e40af?style=for-the-badge&logo=javascript&logoColor=white" alt="Concert Ticket Booking" />
-      </a>
-      <br /><br />
-      <b>Concert Reservation Platform</b><br />
-      <code>JavaScript</code> &bull; <code>Web App</code> &bull; <code>Collab with @Tonmeiii</code>
-      <p>
-        Software engineering web project for concert seat booking, reservation workflow, and ticket order management.
       </p>
     </td>
   </tr>
