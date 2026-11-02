@@ -50,7 +50,7 @@ Computer Engineering Student at **Rajamangala University of Technology Isan (RMU
     <td width="33.3%" align="center" valign="top">
       <br />
       <strong>Embedded Systems &amp; IoT</strong><br /><br />
-      <img src="https://skillicons.dev/icons?i=arduino,raspberrypi&theme=dark" alt="Embedded Systems" /><br /><br />
+      <img src="https://skillicons.dev/icons?i=arduino,python&theme=dark" alt="Embedded Systems" /><br /><br />
       <sub>ESP32 &bull; ESP8266 &bull; MicroPython &bull; Sensors</sub>
       <br /><br />
     </td>
