@@ -147,19 +147,7 @@ Computer Engineering Student at **Rajamangala University of Technology Isan (RMU
 
 ---
 
-### 📊 04. GitHub Atmosphere & Analytics
-
-<div align="center">
-
-  <img height="155" src="https://github-readme-stats-sigma-five.vercel.app/api?username=MIBVI&show_icons=true&bg_color=0a192f&title_color=38bdf8&text_color=e0f2fe&icon_color=0284c7&border_color=0284c7" alt="MIBVI GitHub Stats" />
-  &nbsp;
-  <img height="155" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=MIBVI&layout=compact&bg_color=0a192f&title_color=38bdf8&text_color=e0f2fe&border_color=0284c7" alt="Most Used Languages" />
-
-</div>
-
----
-
-### 📬 05. Connect
+### 📬 04. Connect
 
 <div align="center">
 
